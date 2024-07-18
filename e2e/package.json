@@ -1,0 +1,62 @@
+{
+  "name": "e2e",
+  "private": true,
+  "author": "meow",
+  "description": "E2E test suite",
+  "scripts": {
+    "client:start": "parcel --no-autoinstall clients/index.html",
+    "cypress:open": "cypress open",
+    "cypress:headless": "cypress run",
+    "generate-test": "yarn node generate-test.mjs"
+  },
+  "dependencies": {
+    "@ImgEditTests/audio": "workspace:^",
+
+    "@ImgEditTests/aws-s3-multipart": "workspace:^",
+    "@ImgEditTests/aws-s3": "workspace:^",
+    "@ImgEditTests/box": "workspace:^",
+    "@ImgEditTests/companion-client": "workspace:^",
+    "@ImgEditTests/core": "workspace:^",
+    
+    "@ImgEditTests/file-input": "workspace:^",
+    "@ImgEditTests/form": "workspace:^",
+    "@ImgEditTests/image-editor": "workspace:^",
+    "@ImgEditTests/informer": "workspace:^",
+    "@ImgEditTests/instagram": "workspace:^",
+    "@ImgEditTests/onedrive": "workspace:^",
+    "@ImgEditTests/progress-bar": "workspace:^",
+    "@ImgEditTests/dashboard": "workspace:^",
+    "@ImgEditTests/drag-drop": "workspace:^",
+    "@ImgEditTests/drop-target": "workspace:^",
+    "@ImgEditTests/dropbox": "workspace:^",
+    "@ImgEditTests/golden-retriever": "workspace:^",
+    "@ImgEditTests/google-drive": "workspace:^",
+    "@ImgEditTests/facebook": "workspace:^",
+    "@ImgEditTests/provider-views": "workspace:^",
+    "@ImgEditTests/screen-capture": "workspace:^",
+    "@ImgEditTests/status-bar": "workspace:^",
+    "@ImgEditTests/store-default": "workspace:^",
+    "@ImgEditTests/store-redux": "workspace:^",
+    "@ImgEditTests/thumbnail-generator": "workspace:^",
+    "@ImgEditTests/transloadit": "workspace:^",
+    "@ImgEditTests/tus": "workspace:^",
+    "@ImgEditTests/unsplash": "workspace:^",
+    "@ImgEditTests/url": "workspace:^",
+    "@ImgEditTests/webcam": "workspace:^",
+    "@ImgEditTests/xhr-upload": "workspace:^",
+    "@ImgEditTests/zoom": "workspace:^"
+  },
+  "devDependencies": {
+    "@parcel/transformer-vue": "^3.0.0",
+    "cypress": "^13.0.0",
+    "cypress-terminal-report": "^5.0.0",
+    "deep-freeze": "^0.0.1",
+    "parcel": "^3.0.0",
+    "process": "^0.11.10",
+    "prompts": "^2.4.2",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "typescript": "~5.1",
+    "vue": "^3.2.33"
+  }
+}
